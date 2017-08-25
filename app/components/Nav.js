@@ -1,0 +1,20 @@
+var React = require('react');
+//var Link = require('react-router-dom').Link;
+var NavLink = require('react-router-dom').NavLink;
+
+function Nav () {
+  return (
+    <div>
+      <h1 className='title'>Interstellar Labs</h1>
+      <ul className='nav'>
+        <li>
+          <NavLink exact activeClassName='active' to='/'>
+          Home
+        </NavLink>
+        </li>
+      </ul>
+    </div>
+  )
+}
+
+module.exports = Nav;
